@@ -1,0 +1,44 @@
+.tasks {
+  margin-bottom: 6.25rem;
+
+  &__list {
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    margin-bottom: 1.875rem;
+    padding: 0;
+    list-style: none;
+  }
+
+  &__item {
+    margin-right: 0.75rem;
+
+    &:last-of-type {
+      margin-right: 0;
+    }
+  }
+
+  &__link {
+    display: block;
+    padding: 0.5rem 1.25rem;
+    border: 1px solid #E2E5EB;
+    border-radius: 1rem;
+    text-decoration: none;
+    line-height: 1.25;
+    text-align: center;
+    color: #6E7782;
+
+    &--active {
+      color: #E30611;
+      cursor: default;
+    }
+
+    &:hover:not(&--active) {
+      border-color: #C90000;
+      background-color: #C90000;
+      color: #ffffff;
+      transition: all 0.15s ease-in-out;
+      cursor: url(../img/cursor.png), pointer;
+    }
+  }
+}

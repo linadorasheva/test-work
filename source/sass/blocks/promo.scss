@@ -1,0 +1,27 @@
+.promo {
+  margin-bottom: 6.25rem;
+  padding-top: 4.375rem;
+  padding-bottom: 4.875rem;
+  background-color: #F2F3F7;
+  background-image: url(../img/hero_banner_image.png);
+  background-repeat: no-repeat;
+  background-position: 75% bottom;
+
+  &__description {
+    max-width: 50%;
+    margin: 0;
+    margin-bottom: 1.25rem;
+    padding: 0;
+    font-weight: 600;
+  }
+
+  &__heading {
+    max-width: 50%;
+    margin: 0;
+    margin-bottom: 3.75rem;
+    font-weight: 700;
+    font-size: 3.125rem;
+    line-height: 1.1;
+    text-transform: uppercase;
+  }
+}

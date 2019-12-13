@@ -1,0 +1,15 @@
+.main-header {
+
+  @media (min-width: 768px) {
+
+  }
+
+  @media (min-width: 1024px) {
+    padding: 16px 0;
+
+    &__wrapper {
+      display: flex;
+      align-items: baseline;
+    }
+  }
+}

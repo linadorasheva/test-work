@@ -1,0 +1,47 @@
+.main-nav {
+  @media (min-width: 1024px) {
+    flex-grow: 1;
+
+    &__list {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      margin: 0;
+      padding: 0;
+      list-style: none;
+    }
+
+    &__item {
+
+    }
+
+    &__link {
+
+      color: #001424;
+      text-decoration: none;
+
+      &--user {
+        display: block;
+        width: 209px;
+        padding: 0.5625rem 0;
+        background-color: #DD0000;
+        border-radius: 0.3125rem;
+        color: #ffffff;
+        line-height: 1.25;
+        text-align: center;
+
+        &:hover {
+          background-color: #C90000;
+        }
+      }
+
+      &:hover {
+        cursor: url(../img/cursor.png), pointer;
+      }
+
+      &:hover:not(&--user) {
+        color: #C90000;
+      }
+    }
+  }
+}

@@ -1,0 +1,17 @@
+.logo {
+  display: block;
+  margin-right: 4.5rem;
+  text-decoration: none;
+
+  &__title {
+    margin-left: 0.25rem;
+    font-size: 1.25rem;
+    line-height: 1.2;
+    color: #E30611;
+  }
+
+
+  &:hover {
+    cursor: url(../img/cursor.png), pointer;
+  }
+}

@@ -1,0 +1,30 @@
+.main-footer {
+  padding-top: 3.5rem;
+  padding-bottom: 1.75rem;
+  background-color: #ADB0B3;
+  color: #ffffff;
+
+  &__content {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  &__aside {
+    width: 183px;
+    margin-right: 5.9rem;
+  }
+
+  &__aside-title {
+    display: block;
+    margin-bottom: 1.25rem;
+    font-size: 1.25rem;
+    line-height: 1.2;
+    font-weight: 700;
+  }
+
+  &__aside-text {
+    margin: 0;
+    font-size: 0.875rem;
+    line-height: 1.43;
+  }
+}
