@@ -22,7 +22,6 @@
     "build": "gulp npm init",
     "start": "gulp serve"
   },
-
   "browsersList": [
     "last 2 versions",
     "IE 11",
