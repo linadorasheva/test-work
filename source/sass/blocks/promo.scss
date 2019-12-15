@@ -1,27 +1,55 @@
 .promo {
-  margin-bottom: 6.25rem;
-  padding-top: 4.375rem;
-  padding-bottom: 4.875rem;
+  margin-bottom: 2.75rem;
+  padding-top: 1.875rem;
+  padding-bottom: 14rem;
   background-color: #F2F3F7;
   background-image: url(../img/hero_banner_image.png);
   background-repeat: no-repeat;
-  background-position: 75% bottom;
+  background-position: 50% 100%;
+  background-size: 229px;
 
   &__description {
-    max-width: 50%;
     margin: 0;
     margin-bottom: 1.25rem;
     padding: 0;
     font-weight: 600;
+    font-size: 0.937rem;
+    line-height: 1.1875;
   }
 
   &__heading {
-    max-width: 50%;
+    max-width: 80%;
     margin: 0;
-    margin-bottom: 3.75rem;
+    margin-bottom: 1.25rem;
     font-weight: 700;
-    font-size: 3.125rem;
-    line-height: 1.1;
+    font-size: 2rem;
+    line-height: 1.25;
     text-transform: uppercase;
   }
+
+  @media (min-width: 1368px) {
+    margin-bottom: 6.25rem;
+    padding-top: 4.375rem;
+    padding-bottom: 4.875rem;
+    background-color: #F2F3F7;
+    background-image: url(../img/hero_banner_image.png);
+    background-repeat: no-repeat;
+    background-position: 75% bottom;
+    background-size: auto;
+
+    &__description {
+      max-width: 50%;
+      margin-bottom: 1.25rem;
+      font-size: 1.5rem;
+      line-height: 1.3;
+    }
+
+    &__heading {
+      max-width: 50%;
+      margin-bottom: 3.75rem;
+      font-size: 3.125rem;
+      line-height: 1.1;
+    }
+  }
+
 }

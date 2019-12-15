@@ -1,17 +1,26 @@
 .logo {
   display: block;
-  margin-right: 4.5rem;
+  margin-right: auto;
   text-decoration: none;
-
-  &__title {
-    margin-left: 0.25rem;
-    font-size: 1.25rem;
-    line-height: 1.2;
-    color: #E30611;
-  }
-
 
   &:hover {
     cursor: url(../img/cursor.png), pointer;
+  }
+
+  &__title {
+    display: none;
+  }
+
+  @media (min-width: 1368px) {
+    margin-right: 4.5rem;
+
+    &__title {
+      display: inline-block;
+      margin-right: 0;
+      margin-left: 0.25rem;
+      font-size: 1.25rem;
+      line-height: 1.2;
+      color: #E30611;
+    }
   }
 }

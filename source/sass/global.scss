@@ -24,10 +24,10 @@ main {
   max-width: 288px;
   margin: 0 auto;
 
-  @media (min-width: 768px) {
-    max-width: 704px;
-    margin: 0 auto;
-  }
+  // @media (min-width: 768px) {
+  //   max-width: 704px;
+  //   margin: 0 auto;
+  // }
 
   @media (min-width: 1368px) {
     max-width: 1192px;
@@ -37,10 +37,14 @@ main {
 
 .heading {
   margin: 0;
-  margin-bottom: 3.125rem;
+  margin-bottom: 2.375rem;
   font-weight: 700;
-  font-size: 2rem;
-  line-height: 1.25;
   color: #001424;
-  text-align: center;
+
+  @media (min-width: 1368px) {
+    margin-bottom: 3.125rem;
+    font-size: 2rem;
+    line-height: 1.25;
+    text-align: center;
+  }
 }

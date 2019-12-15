@@ -1,11 +1,12 @@
 .main-header {
+  padding: 16px 0;
 
-  @media (min-width: 768px) {
-
+  &__wrapper {
+    display: flex;
+    align-items: center;
   }
 
-  @media (min-width: 1024px) {
-    padding: 16px 0;
+  @media (min-width: 1368px) {
 
     &__wrapper {
       display: flex;

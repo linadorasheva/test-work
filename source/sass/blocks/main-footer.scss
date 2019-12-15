@@ -1,17 +1,16 @@
 .main-footer {
-  padding-top: 3.5rem;
-  padding-bottom: 1.75rem;
+  position: relative;
+  padding: 1.5rem 0;
   background-color: #ADB0B3;
   color: #ffffff;
 
   &__content {
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: column;
   }
 
   &__aside {
-    width: 183px;
-    margin-right: 5.9rem;
+    margin-bottom: 2rem;
   }
 
   &__aside-title {
@@ -26,5 +25,21 @@
     margin: 0;
     font-size: 0.875rem;
     line-height: 1.43;
+  }
+
+  @media (min-width: 1368px) {
+    padding-top: 3.5rem;
+    padding-bottom: 1.75rem;
+
+    &__content {
+      flex-direction: row;
+      flex-wrap: wrap;
+    }
+
+    &__aside {
+      width: 183px;
+      margin-bottom: 0;
+      margin-right: 5.9rem;
+    }
   }
 }

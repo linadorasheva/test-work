@@ -1,32 +1,58 @@
 .main-nav {
-  @media (min-width: 1024px) {
+  margin-right: 1.625rem;
+
+  &__list {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  &__link {
+    display: none;
+
+    &--user {
+      display: block;
+      width: 32px;
+      height: 32px;
+      background-repeat: no-repeat;
+      background-position: 50%;
+      background-image: url(../img/user.svg);
+      font-size: 0;
+
+      &:hover {
+        cursor: url(../img/cursor.png), pointer;
+      }
+    }
+  }
+
+  @media (min-width: 1368px) {
     flex-grow: 1;
+    margin-right: 0;
 
     &__list {
       display: flex;
       justify-content: space-between;
       align-items: baseline;
-      margin: 0;
-      padding: 0;
-      list-style: none;
-    }
-
-    &__item {
-
     }
 
     &__link {
-
+      display: block;
       color: #001424;
       text-decoration: none;
 
       &--user {
         display: block;
         width: 209px;
+        height: auto;
         padding: 0.5625rem 0;
         background-color: #DD0000;
+        background-image: none;
         border-radius: 0.3125rem;
         color: #ffffff;
+        font-size: 1rem;
         line-height: 1.25;
         text-align: center;
 

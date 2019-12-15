@@ -1,12 +1,12 @@
 .btn {
   display: block;
-  width: 299px;
-  padding: 0.5625rem 0;
+  width: 220px;
+  padding: 0.5312rem 0;
   background-color: #DD0000;
   border-radius: 0.3125rem;
   font-weight: 600;
-  font-size: 1.25rem;
-  line-height: 1.5;
+  font-size: 1rem;
+  line-height: 1.1875;
   text-align: center;
   text-decoration: none;
   color: #ffffff;
@@ -14,5 +14,12 @@
   &:hover {
     cursor: url(../img/cursor.png), pointer;
     background-color: #C90000;
+  }
+
+  @media (min-width: 1368px) {
+    width: 299px;
+    padding: 0.5625rem 0;
+    font-size: 1.25rem;
+    line-height: 1.5;
   }
 }

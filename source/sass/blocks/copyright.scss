@@ -1,5 +1,22 @@
 .copyright {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: 0;
+  padding: 1.25rem 1rem;
+  background-color: #ffffff;
   font-size: 0.75rem;
   line-height: 1.3;
   font-weight: 600;
+  color: #6E7782;
+  text-align: center;
+
+  @media (min-width: 1368px) {
+    position: static;
+    padding: 0;
+    background: transparent;
+    color: #ffffff;
+    text-align: left;
+  }
 }

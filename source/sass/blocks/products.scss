@@ -5,12 +5,16 @@
   padding: 0;
   list-style: none;
 
+  width: 320px;
+  overflow: auto;
+
   &__item {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     width: 276px;
     min-height: 417px;
+    margin-right: 0.5rem;
     padding: 1.875rem 1.875rem;
     padding-top: 4.1875rem;
     background: #FFFFFF;
@@ -38,7 +42,11 @@
     margin: 0;
     margin-bottom: 1.4375rem;
     font-size: 1.5rem;
-    line-height: 1.07;
+    line-height: 1.3;
+  }
+
+  &__wrapper {
+    margin-top: 1rem;
   }
 
   &__description {
@@ -47,10 +55,6 @@
     font-size: 0.875rem;
     line-height: 1.5;
     color: #202D3D;
-  }
-
-  &__wrapper {
-    margin-top: 1rem;
   }
 
   &__advantage {
@@ -104,6 +108,19 @@
 
     &:hover {
       cursor: url(../img/cursor.png), pointer;
+    }
+  }
+
+  @media (min-width: 1368px) {
+    width: auto;
+    overflow: none;
+
+    &__item {
+      margin-right: 0;
+    }
+
+    &__title {
+      line-height: 1.07;
     }
   }
 }
